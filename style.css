@@ -1,0 +1,137 @@
+
+
+* {
+  margin: 0px;
+  padding: 0px;
+  border: 0px dotted blue;
+  font-family: monospace;
+  font-size: 12px;
+}
+
+.scrapism-text {
+  font-family: monospace;
+  font-size: .866vw;
+  white-space: pre-wrap;
+  line-height: 1vw;
+  animation-timing-function: linear;
+  text-align: left;
+  letter-spacing: -.12vw;
+  color: black;
+  top: 16px;
+  margin: 16px;
+  border-bottom: 1px solid lightgrey;
+}
+
+.website-container {
+  margin: 16px;
+}
+
+.column-container {
+  display: flex;
+}
+
+.column {
+  width: 100%;
+}
+
+.sticky-column {
+  position: sticky;
+  top: 16px;
+  width: 40%;
+  height: 100%;
+  padding-right: 16px;
+}
+
+.content-column {
+  width: 100%;
+  border-left: 1px solid lightgrey;
+  padding-left: 16px;
+}
+
+.section-header {
+  width: 100%;
+  border-bottom: 1px solid lightgrey;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+}
+
+.project-column {
+  border-right: 1px solid lightgrey;
+  padding-right: 16px;
+  margin-right: 16px;
+}
+
+.project-container {
+  padding-bottom: 48px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid lightgrey;
+}
+
+.project-image {
+  width: 100%;
+  background-color: black;
+  height: auto;
+}
+
+.project-text {
+  margin-top: 6px;
+}
+
+.link {
+  display: block;
+  position: relative;
+  margin-top: 16px;
+  border: 1px solid lightgrey;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  padding: 6px;
+}
+
+.link:hover {
+  background-color: blue;
+  color: white;
+}
+
+@media (max-width: 800px) {
+
+  .scrapism-text {
+    font-family: monospace;
+    font-size: .825vw;
+    white-space: pre-wrap;
+    line-height: 1.2vw;
+    animation-timing-function: linear;
+    text-align: left;
+    letter-spacing: -.12vw;
+    color: black;
+    top: 16px;
+  }
+
+  .column-container {
+    display: block;
+  }
+
+  .column {
+    width: 100%;
+  }
+
+  .sticky-column {
+    display: block;
+    position: relative;
+    height: auto;
+    margin-bottom: 48px;
+    margin-top: -16px;
+  }
+
+  .content-column {
+    display: block;
+    border-left: 0px solid lightgrey;
+    padding-left: 0px;
+  }
+
+  .project-column {
+    border-right: 0px solid lightgrey;
+    padding-right: 0px;
+    margin-right: 0px;
+  }
+}
